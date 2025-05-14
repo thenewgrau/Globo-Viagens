@@ -37,6 +37,11 @@ section {
     box-sizing: border-box;   
 }
 
+#imagemLogo{
+    margin-top: 60px;
+    width: 200px;
+    height: 150px;
+}
 
 #depoimentos, #associe-se, #sobre-nos {
     display: flex;
@@ -91,13 +96,14 @@ section#sobre-nos {
 }
 
 .btn-primary:hover {
-    background-color: #2422e0;
+    background-color: #1b1b70;
 }
 
 .btn-secondary {
     background-color: white;
     color: #111143;
     border: 1px solid #111143;
+    border
 }
 
 .btn-secondary:hover {
@@ -470,7 +476,7 @@ nav a:hover {
 .card-footer {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     margin-top: 1rem;
 }
 
