@@ -385,6 +385,7 @@ nav a:hover {
     border: none;
     cursor: pointer;
     padding: 0.5rem;
+    font-size: 1.5rem;
 }
 
 .mobile-menu {
@@ -531,14 +532,20 @@ nav a:hover {
 }
 
 .benefit-icon {
+    flex-shrink: 0; 
+    width: 2rem;
+    height: 2rem;
+    min-width: 2rem;
+    min-height: 2rem;
+    border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 2rem;
-    height: 2rem;
-    border-radius: 50%;
     background-color: rgba(255, 255, 255, 0.2);
+    color: #111143; 
+    font-size: 1rem; 
 }
+
 
 form, .form-container {
     width: 100%;
