@@ -12,6 +12,7 @@ html {
 body {
     line-height: 1.6;
     color: #333;
+    overflow-x: hidden;
 }
 
 a {
@@ -73,7 +74,7 @@ section#sobre-nos {
 }
 
 .container {
-    width: 1200px;
+    width: 100%;
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 2rem;
@@ -432,16 +433,13 @@ nav a:hover {
 
 
 .hero-content {
-    position: relative;
-    z-index: 1;
+    white-space: normal;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
     width: 100%;
-    max-width: 32rem;
-    white-space: nowrap;
-    text-overflow: ellipsis;
+    max-width: 100%;
+    padding: 0 1rem;
 }
-
-
-
 /* Catálogo Section */
 .card {
     background-color: white;
@@ -542,15 +540,21 @@ nav a:hover {
     background-color: rgba(255, 255, 255, 0.2);
 }
 
-.form-group {
-    margin-bottom: 1rem;
+form, .form-container {
+    width: 100%;
+    max-width: 100%;
 }
 
-input, textarea {
+.form-group {
     width: 100%;
-    padding: 0.75rem;
-    border: 1px solid #d1d5db;
-    border-radius: 0.375rem;
+    padding: 0 1rem;
+}
+
+input,
+textarea {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
     font-size: 1rem;
 }
 
@@ -647,6 +651,32 @@ footer {
     color: #6b7280;
 }
 
+#contato {
+    display: block;
+    padding: 2rem 1rem;
+    min-height: auto;
+}
+
+#contato input,
+#contato textarea {
+    width: 100%;
+    max-width: 100%;
+    font-size: 1rem;
+    padding: 0.75rem;
+    box-sizing: border-box;
+}
+
+#contato .form-group {
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.contact-item span {
+    word-break: break-word;
+    overflow-wrap: anywhere;
+}
+
+
 /* Responsividade */
 @media (min-width: 768px) {
     .grid-cols-2 {
@@ -656,6 +686,19 @@ footer {
     .footer-grid {
         grid-template-columns: repeat(4, 1fr);
     }
+
+    section {
+        flex-direction: column;
+        min-height: auto;
+        padding: 1.5rem 1rem;
+
+    input,
+    textarea {
+        font-size: 0.875rem;
+        padding: 0.5rem;
+    }
+}
+
 }
 
 @media (min-width: 1024px) {
@@ -680,5 +723,101 @@ footer {
     .py-24 {
         padding-top: 4rem;
         padding-bottom: 4rem;
+    }
+}
+
+/* Responsivo para telas de 375px ou menores */
+@media (max-width: 375px) {
+    .hero-content h1 {
+        font-size: 1.75rem;
+    }
+
+    .container {
+        padding: 0 1rem;
+    }
+
+    .card-img {
+        height: 8rem;
+    }
+
+    .btn-lg {
+        padding: 0.75rem 1rem;
+        font-size: 1rem;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .stats {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .testimonial-header {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+/* Responsivo para telas de 320px ou menores */
+@media (max-width: 320px) {
+    .hero-content h1 {
+        font-size: 1.5rem;
+    }
+
+    .hero-content p {
+        font-size: 0.875rem;
+    }
+
+    .btn {
+        padding: 0.5rem 0.75rem;
+        font-size: 0.875rem;
+    }
+
+    .testimonial-header {
+        gap: 0.5rem;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr;
+    }
+
+    nav ul {
+        gap: 1rem;
+    }
+}
+
+/* Reforço para tablets (até 768px) */
+@media (max-width: 768px) {
+    .grid-cols-2,
+    .grid-cols-3 {
+        grid-template-columns: 1fr;
+    }
+
+    .container {
+        padding: 0 1rem;
+    }
+
+    .hero-content {
+        max-width: 100%;
+        padding: 0 1rem;
+    }
+
+    .stats {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .benefits-list {
+        align-items: center;
+    }
+
+    .testimonial-card {
+        padding: 1rem;
+    }
+
+    .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
