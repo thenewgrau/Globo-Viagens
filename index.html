@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Globo Viagens - Viagens e Turismo</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="private/styles/styles.css">
 </head>
 <body>
@@ -78,19 +79,46 @@
                 <div class="grid grid-cols-1 grid-cols-2 grid-cols-3 gap-6">
                     <!-- Destino 1 -->
                     <div class="card shadow-lg">
-                        <img src="https://source.unsplash.com/random/600x400/?beach,brazil" alt="Praias do Nordeste" class="card-img">
+                        <div class="image-carousel" data-images='[
+                            "/public/images/PortoSeguro-BA/IMG-20250520-WA0017.jpg",
+                            "/public/images/PortoSeguro-BA/IMG-20250520-WA0018.jpg",
+                            "/public/images/PortoSeguro-BA/IMG-20250520-WA0019.jpg",
+                            "/public/images/PortoSeguro-BA/IMG-20250520-WA0020.jpg",
+                            "/public/images/PortoSeguro-BA/IMG-20250520-WA0021.jpg",
+                            "/public/images/PortoSeguro-BA/IMG-20250520-WA0022.jpg",
+                            "/public/images/PortoSeguro-BA/IMG-20250520-WA0023.jpg"
+                            ]'
+                        >
+
+                            <img src="/public/images/PortoSeguro-BA/IMG-20250520-WA0017.jpg" class="carousel-image" alt="Imagem 1">
+                            
+                            <button class="prev-button"><i class="fas fa-chevron-left"></i></button>
+                            <button class="next-button"><i class="fas fa-chevron-right"></i></button>
+                        </div>
+
+
                         <div class="card-content">
                             <div class="card-title">
                                 <i class="fas fa-map-marker-alt text-primary"></i>
-                                <h3 class="font-bold text-xl">Praias do Nordeste</h3>
+                                <h3 class="font-bold text-xl">Porto Seguro - BA</h3>
                             </div>
-                            <p class="text-muted">Conheça as mais belas praias do litoral nordestino brasileiro.</p>
+                            <p class="mb-2">Condomínio Beira Mar</p>
+                            <p class="text-muted">
+                                • Beira Mar<br>
+                                • 2 quartos <br>
+                                • Ar condicionado<br> 
+                                • Piscina<br>
+                                • Wi-Fi<br>
+                                • Cozinha Completa<br>
+                                • Garagem<br>
+                            </p>
+                            <p class="mt-2 mb-2">Obs: Não inclui roupa de cama nem alimentação.</p>
+                            <p class="text-muted">A partir de R$ 39,90</p> 
                             <div class="card-footer">
                                 <a href="#" class="btn btn-secondary">Ver Disponibilidade</a>
                             </div>
                         </div>
                     </div>
-
                     <!-- Destino 2 -->
                     <div class="card shadow-lg">
                         <img src="https://source.unsplash.com/random/600x400/?europe,travel" alt="Europa Clássica" class="card-img">
@@ -449,10 +477,12 @@
             </div>
         </div>
     </footer>
-
-    <script src="private/javascript/javascript.js"></script>
+    <!-- imagens passaveis -->
+     <script src="private/javascript/imagens.js"></script>
+    <!-- animacao hotbar -->
+    <script src="private/javascript/hotbar.js"></script>
+    <!-- menu mobile -->
     <script>
-        // Menu Mobile
         const mobileMenuBtn = document.getElementById('mobile-menu-btn');
         const mobileMenu = document.getElementById('mobile-menu');
         const mobileLinks = document.querySelectorAll('.mobile-link');
@@ -496,6 +526,7 @@
             });
         });
     </script>
+    <!-- whatsapp botao -->
     <script>
         var url = 'https://wati-integration-prod-service.clare.ai/v2/watiWidget.js?95361';
         var s = document.createElement('script');
