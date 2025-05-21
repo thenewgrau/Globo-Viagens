@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Globo Viagens - Viagens e Turismo</title>
+    <link rel="icon" href="images/Logo.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="private/styles/styles.css">
@@ -60,7 +61,7 @@
                     </p>
                     <div class="flex gap-4">
                         <a href="#catalogo" class="btn btn-primary btn-lg">Ver Destinos</a>
-                        <a href="#contato" class="btn btn-outline btn-lg">Fale Conosco</a>
+                        <a href="https://api.whatsapp.com/send?phone=6799202-7942&text=Ol%C3%A1,%20quero%20tirar%20algumas%20d%C3%BAvidas!" target="_blank" class="btn btn-outline btn-lg">Fale Conosco</a>
                     </div>
                 </div>
             </div>
@@ -77,7 +78,7 @@
                 </div>
 
                 <div class="grid grid-cols-1 grid-cols-2 grid-cols-3 gap-6">
-                    <!-- Destino 1 -->
+<!-- Destino 1 ---------------------------------------------------->
                     <div class="card shadow-lg">
                         <div class="image-carousel" data-images='[
                             "images/PortoSeguro-BA/IMG-20250520-WA0017.jpg",
@@ -103,6 +104,7 @@
                             </div>
                             <p class="mb-2">Condomínio Beira Mar</p>
                             <p class="text-muted">
+                                • Até 5 pessoas<br>
                                 • Beira Mar<br>
                                 • 2 quartos <br>
                                 • Ar condicionado<br> 
@@ -114,92 +116,315 @@
                             <p class="mt-2 mb-2">Obs: Não inclui roupa de cama nem alimentação.</p>
                             <p class="text-muted">A partir de R$ 39,90</p> 
                             <div class="card-footer">
-                                <a href="#" class="btn btn-secondary">Ver Disponibilidade</a>
+                                <a href="https://api.whatsapp.com/send?phone=6799202-7942&text=Ol%C3%A1,%20quero%20tirar%20algumas%20d%C3%BAvidas!" target="_blank" class="btn btn-secondary">Ver Disponibilidade</a>
                             </div>
                         </div>
                     </div>
-                    <!-- Destino 2 -->
+<!-- Destino 2 ---------------------------------------------------->
                     <div class="card shadow-lg">
-                        <img src="https://source.unsplash.com/random/600x400/?europe,travel" alt="Europa Clássica" class="card-img">
-                        <div class="card-content">
-                            <div class="card-title">
-                                <i class="fas fa-plane text-primary"></i>
-                                <h3 class="font-bold text-xl">Europa Clássica</h3>
-                            </div>
-                            <p class="text-muted">Um tour pelos principais pontos turísticos da Europa.</p>
-                            <div class="card-footer">
-                                <a href="#" class="btn btn-secondary">Ver Disponibilidade</a>
-                            </div>
-                        </div>
-                    </div>
+                        <div class="image-carousel" data-images='[
+                            "images/PortoSeguro-BA2/IMG-20250520-WA0024.jpg",
+                            "images/PortoSeguro-BA2/IMG-20250520-WA0025.jpg",
+                            "images/PortoSeguro-BA2/IMG-20250520-WA0026.jpg",
+                            "images/PortoSeguro-BA2/IMG-20250520-WA0027.jpg",
+                            "images/PortoSeguro-BA2/IMG-20250520-WA0028.jpg",
+                            "images/PortoSeguro-BA2/IMG-20250520-WA0029.jpg",
+                            "images/PortoSeguro-BA2/IMG-20250520-WA0030.jpg"
+                            ]'
+                        >
+                        <img src="images/PortoSeguro-BA2/IMG-20250520-WA0024.jpg" class="carousel-image" alt="Imagem">
 
-                    <!-- Destino 3 -->
-                    <div class="card shadow-lg">
-                        <img src="https://source.unsplash.com/random/600x400/?cruise,caribbean" alt="Cruzeiro Caribe" class="card-img">
-                        <div class="card-content">
-                            <div class="card-title">
-                                <i class="fas fa-ship text-primary"></i>
-                                <h3 class="font-bold text-xl">Cruzeiro Caribe</h3>
-                            </div>
-                            <p class="text-muted">Navegue pelas águas cristalinas do Caribe em um cruzeiro de luxo.</p>
-                            <div class="card-footer">
-                                <a href="#" class="btn btn-secondary">Ver Disponibilidade</a>
-                            </div>
+                            <button class="prev-button"><i class="fas fa-chevron-left"></i></button>
+                            <button class="next-button"><i class="fas fa-chevron-right"></i></button>
                         </div>
-                    </div>
 
-                    <!-- Destino 4 -->
-                    <div class="card shadow-lg">
-                        <img src="https://source.unsplash.com/random/600x400/?amazon,forest" alt="Expedição Amazônica" class="card-img">
-                        <div class="card-content">
-                            <div class="card-title">
-                                <i class="fas fa-train text-primary"></i>
-                                <h3 class="font-bold text-xl">Expedição Amazônica</h3>
-                            </div>
-                            <p class="text-muted">Aventure-se pela maior floresta tropical do mundo.</p>
-                            <div class="card-footer">
-                                <a href="#" class="btn btn-secondary">Ver Disponibilidade</a>
-                            </div>
-                        </div>
-                    </div>
 
-                    <!-- Destino 5 -->
-                    <div class="card shadow-lg">
-                        <img src="https://source.unsplash.com/random/600x400/?wine,vineyard" alt="Rota do Vinho" class="card-img">
-                        <div class="card-content">
-                            <div class="card-title">
-                                <i class="fas fa-car text-primary"></i>
-                                <h3 class="font-bold text-xl">Rota do Vinho</h3>
-                            </div>
-                            <p class="text-muted">Conheça as melhores vinícolas do sul do Brasil e Argentina.</p>
-                            <div class="card-footer">
-                                <a href="#" class="btn btn-secondary">Ver Disponibilidade</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Destino 6 -->
-                    <div class="card shadow-lg">
-                        <img src="https://source.unsplash.com/random/600x400/?alps,mountains" alt="Montanhas dos Alpes" class="card-img">
                         <div class="card-content">
                             <div class="card-title">
                                 <i class="fas fa-map-marker-alt text-primary"></i>
-                                <h3 class="font-bold text-xl">Montanhas dos Alpes</h3>
+                                <h3 class="font-bold text-xl">Porto Seguro - BA</h3>
                             </div>
-                            <p class="text-muted">Paisagens deslumbrantes e esportes de inverno nos Alpes Suíços.</p>
+                            <p class="mb-2">Condomínio Beira Mar</p>
+                            <p class="text-muted">
+                                • Até 5 pessoas<br>
+                                • Beira Mar<br>
+                                • 2 quartos <br>
+                                • Ar condicionado<br> 
+                                • Piscina<br>
+                                • Wi-Fi<br>
+                                • Cozinha Completa<br>
+                                • Garagem<br>
+                            </p>
+                            <p class="mt-2 mb-2">Obs: Não inclui roupa de cama nem alimentação.</p>
+                            <p class="text-muted">A partir de R$ 49,90</p> 
                             <div class="card-footer">
-                                <a href="#" class="btn btn-secondary">Ver Disponibilidade</a>
+                                <a href="https://api.whatsapp.com/send?phone=6799202-7942&text=Ol%C3%A1,%20quero%20tirar%20algumas%20d%C3%BAvidas!" target="_blank" class="btn btn-secondary">Ver Disponibilidade</a>
                             </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="mt-12 text-center">
-                    <a href="#" class="btn btn-primary">
-                        Ver Todos os Destinos
-                        <i class="fas fa-chevron-right ml-2"></i>
-                    </a>
-                </div>
+<!-- Destino 3 ---------------------------------------------------->
+                    <div class="card shadow-lg">
+                        <div class="image-carousel" data-images='[
+                            "images/PortoDeGalinhas-PE/IMG-20250520-WA0031.jpg",
+                            "images/PortoDeGalinhas-PE/IMG-20250520-WA0032.jpg",
+                            "images/PortoDeGalinhas-PE/IMG-20250520-WA0033.jpg",
+                            "images/PortoDeGalinhas-PE/IMG-20250520-WA0034.jpg",
+                            "images/PortoDeGalinhas-PE/IMG-20250520-WA0035.jpg",
+                            "images/PortoDeGalinhas-PE/IMG-20250520-WA0036.jpg",
+                            "images/PortoDeGalinhas-PE/IMG-20250520-WA0072.jpg"
+                            
+                            ]'
+                        >
+                        <img src="images/PortoDeGalinhas-PE/IMG-20250520-WA0031.jpg" class="carousel-image" alt="Imagem">
+
+                            <button class="prev-button"><i class="fas fa-chevron-left"></i></button>
+                            <button class="next-button"><i class="fas fa-chevron-right"></i></button>
+                        </div>
+
+
+                        <div class="card-content">
+                            <div class="card-title">
+                                <i class="fas fa-map-marker-alt text-primary"></i>
+                                <h3 class="font-bold text-xl">Porto de Galinhas - PE</h3>
+                            </div>
+                            <p class="mb-2">Apartamento Mobiliado</p>
+                            <p class="text-muted">
+                                • Até 6 pessoas<br>     
+                                • 50 metros do mar<br>  
+                                • ⁠2 quartos<br>  
+                                • ⁠Ar condicionado<br>   
+                                • ⁠Piscina<br>   
+                                • ⁠Wi-Fi<br>  
+                                • ⁠Cozinha Completa<br>  
+                                • ⁠Garagem<br>  
+                            </p>
+                            <p class="mt-2 mb-2">Obs: Não inclui roupa de cama nem alimentação.</p>
+                            <p class="text-muted">A partir de R$ 49,90</p> 
+                            <div class="card-footer">
+                                <a href="https://api.whatsapp.com/send?phone=6799202-7942&text=Ol%C3%A1,%20quero%20tirar%20algumas%20d%C3%BAvidas!" target="_blank" class="btn btn-secondary">Ver Disponibilidade</a>
+                            </div>
+                        </div>
+                    </div>
+
+<!-- Destino 4 ---------------------------------------------------->
+                    <div class="card shadow-lg">
+                        <div class="image-carousel" data-images='[
+                            "images/PortoDeGalinhas2-PE/IMG-20250520-WA0037.jpg",
+                            "images/PortoDeGalinhas2-PE/IMG-20250520-WA0038.jpg",
+                            "images/PortoDeGalinhas2-PE/IMG-20250520-WA0039.jpg",
+                            "images/PortoDeGalinhas2-PE/IMG-20250520-WA0040.jpg",
+                            "images/PortoDeGalinhas2-PE/IMG-20250520-WA0041.jpg"
+                            ]'
+                        >
+                        <img src="images/PortoDeGalinhas2-PE/IMG-20250520-WA0037.jpg" class="carousel-image" alt="Imagem">
+
+                            <button class="prev-button"><i class="fas fa-chevron-left"></i></button>
+                            <button class="next-button"><i class="fas fa-chevron-right"></i></button>
+                        </div>
+
+
+                        <div class="card-content">
+                            <div class="card-title">
+                                <i class="fas fa-map-marker-alt text-primary"></i>
+                                <h3 class="font-bold text-xl">Porto de Galinhas - PE</h3>
+                            </div>
+                            <p class="mb-2">Apartamento Loft</p>
+                            <p class="text-muted">
+                                • Até 4 pessoas<br>     
+                                • 150 metros do mar<br> 
+                                • ⁠2 quartos<br> 
+                                • ⁠Ar condicionado<br>  
+                                • ⁠Piscina<br>  
+                                • ⁠Wi-Fi<br> 
+                                • ⁠Cozinha Completa<br> 
+                                • ⁠Garagem<br>  
+                            </p>
+                            <p class="mt-2 mb-2">Obs: Não inclui roupa de cama nem alimentação.</p>
+                            <p class="text-muted">A partir de R$ 29,90</p> 
+                            <div class="card-footer">
+                                <a href="https://api.whatsapp.com/send?phone=6799202-7942&text=Ol%C3%A1,%20quero%20tirar%20algumas%20d%C3%BAvidas!" target="_blank" class="btn btn-secondary">Ver Disponibilidade</a>
+                            </div>
+                        </div>
+                    </div>
+
+<!-- Destino 5 ---------------------------------------------------->
+                    <div class="card shadow-lg">
+                        <div class="image-carousel" data-images='[
+                            "images/Fortaleza-CE/IMG-20250520-WA0042.jpg",
+                            "images/Fortaleza-CE/IMG-20250520-WA0043.jpg",
+                            "images/Fortaleza-CE/IMG-20250520-WA0044.jpg",
+                            "images/Fortaleza-CE/IMG-20250520-WA0045.jpg",
+                            "images/Fortaleza-CE/IMG-20250520-WA0046.jpg"
+                            ]'
+                        >
+                        <img src="images/Fortaleza-CE/IMG-20250520-WA0042.jpg" class="carousel-image" alt="Imagem">
+
+                            <button class="prev-button"><i class="fas fa-chevron-left"></i></button>
+                            <button class="next-button"><i class="fas fa-chevron-right"></i></button>
+                        </div>
+
+
+                        <div class="card-content">
+                            <div class="card-title">
+                                <i class="fas fa-map-marker-alt text-primary"></i>
+                                <h3 class="font-bold text-xl">Fortaleza - CE</h3>
+                            </div>
+                            <p class="mb-2">Apartamento Mobiliado</p>
+                            <p class="text-muted">
+                                • Até 6 pessoas<br>     
+                                • 150 metros do mar<br>
+                                • ⁠3 quartos<br>
+                                • ⁠Ar condicionado<br> 
+                                • ⁠Piscina<br> 
+                                • ⁠Wi-Fi<br>
+                                • ⁠Cozinha Completa<br>
+                                • ⁠Garagem<br> 
+ 
+                            </p>
+                            <p class="mt-2 mb-2">Obs: Não inclui roupa de cama nem alimentação.</p>
+                            <p class="text-muted">A partir de R$ 29,90</p> 
+                            <div class="card-footer">
+                                <a href="https://api.whatsapp.com/send?phone=6799202-7942&text=Ol%C3%A1,%20quero%20tirar%20algumas%20d%C3%BAvidas!" target="_blank" class="btn btn-secondary">Ver Disponibilidade</a>
+                            </div>
+                        </div>
+                    </div>
+
+<!-- Destino 6 ---------------------------------------------------->
+                    <div class="card shadow-lg">
+                        <div class="image-carousel" data-images='[
+                            "images/Maceio-AL/IMG-20250520-WA0047.jpg",
+                            "images/Maceio-AL/IMG-20250520-WA0048.jpg",
+                            "images/Maceio-AL/IMG-20250520-WA0049.jpg",
+                            "images/Maceio-AL/IMG-20250520-WA0050.jpg",
+                            "images/Maceio-AL/IMG-20250520-WA0051.jpg",
+                            "images/Maceio-AL/IMG-20250520-WA0052.jpg",
+                            "images/Maceio-AL/IMG-20250520-WA0053.jpg",
+                            "images/Maceio-AL/IMG-20250520-WA0054.jpg"
+                            ]'
+                        >
+                        <img src="images/Maceio-AL/IMG-20250520-WA0047.jpg" class="carousel-image" alt="Imagem">
+
+                            <button class="prev-button"><i class="fas fa-chevron-left"></i></button>
+                            <button class="next-button"><i class="fas fa-chevron-right"></i></button>
+                        </div>
+
+
+                        <div class="card-content">
+                            <div class="card-title">
+                                <i class="fas fa-map-marker-alt text-primary"></i>
+                                <h3 class="font-bold text-xl">Maceió - AL</h3>
+                            </div>
+                            <p class="mb-2">Apartamento Mobiliado</p>
+                            <p class="text-muted">
+                                • Até 4 pessoas<br>     
+                                • 150 metros do mar<br>     
+                                • ⁠3 quartos<br>     
+                                • ⁠Ar condicionado<br> 
+                                • ⁠Piscina<br> 
+                                • ⁠Wi-Fi<br>
+                                • ⁠Cozinha Completa<br>
+                                • ⁠Garagem<br> 
+                                • ⁠Academia<br> 
+ 
+                            </p>
+                            <p class="mt-2 mb-2">Obs: Não inclui roupa de cama nem alimentação.</p>
+                            <p class="text-muted">A partir de R$ 49,90</p> 
+                            <div class="card-footer">
+                                <a href="https://api.whatsapp.com/send?phone=6799202-7942&text=Ol%C3%A1,%20quero%20tirar%20algumas%20d%C3%BAvidas!" target="_blank" class="btn btn-secondary">Ver Disponibilidade</a>
+                            </div>
+                        </div>
+                    </div>
+
+<!-- Destino 7 ---------------------------------------------------->
+                    <div class="card shadow-lg">
+                        <div class="image-carousel" data-images='[
+                            "images/Maceio-AL2/IMG-20250520-WA0055.jpg",
+                            "images/Maceio-AL2/IMG-20250520-WA0056.jpg",
+                            "images/Maceio-AL2/IMG-20250520-WA0057.jpg",
+                            "images/Maceio-AL2/IMG-20250520-WA0058.jpg"
+                            ]'
+                        >
+                        <img src="images/Maceio-AL2/IMG-20250520-WA0055.jpg" class="carousel-image" alt="Imagem">
+
+                            <button class="prev-button"><i class="fas fa-chevron-left"></i></button>
+                            <button class="next-button"><i class="fas fa-chevron-right"></i></button>
+                        </div>
+
+
+                        <div class="card-content">
+                            <div class="card-title">
+                                <i class="fas fa-map-marker-alt text-primary"></i>
+                                <h3 class="font-bold text-xl">Maceió - AL</h3>
+                            </div>
+                            <p class="mb-2">Apartamento Mobiliado</p>
+                            <p class="text-muted">
+                                • Até 6 pessoas<br>     
+                                • 500 metros do mar<br>
+                                • ⁠2 quartos<br>
+                                • ⁠Ar condicionado<br> 
+                                • ⁠Wi-Fi<br>
+                                • ⁠Cozinha Completa<br>
+                                • ⁠Garagem<br>
+ 
+                            </p>
+                            <p class="mt-2 mb-2">Obs: Não inclui roupa de cama nem alimentação.</p>
+                            <p class="text-muted">A partir de R$ 29,90</p> 
+                            <div class="card-footer">
+                                <a href="https://api.whatsapp.com/send?phone=6799202-7942&text=Ol%C3%A1,%20quero%20tirar%20algumas%20d%C3%BAvidas!" target="_blank" class="btn btn-secondary">Ver Disponibilidade</a>
+                            </div>
+                        </div>
+                    </div>
+
+<!-- Destino 8 ---------------------------------------------------->
+                    <div class="card shadow-lg">
+                        <div class="image-carousel" data-images='[
+                            "images/Fortaleza-CE2/IMG-20250520-WA0059.jpg",
+                            "images/Fortaleza-CE2/IMG-20250520-WA0060.jpg",
+                            "images/Fortaleza-CE2/IMG-20250520-WA0061.jpg",
+                            "images/Fortaleza-CE2/IMG-20250520-WA0062.jpg",
+                            "images/Fortaleza-CE2/IMG-20250520-WA0063.jpg",
+                            "images/Fortaleza-CE2/IMG-20250520-WA0064.jpg"
+                            ]'
+                        >
+                        <img src="images/Fortaleza-CE2/IMG-20250520-WA0059.jpg" class="carousel-image" alt="Imagem">
+
+                            <button class="prev-button"><i class="fas fa-chevron-left"></i></button>
+                            <button class="next-button"><i class="fas fa-chevron-right"></i></button>
+                        </div>
+
+
+                        <div class="card-content">
+                            <div class="card-title">
+                                <i class="fas fa-map-marker-alt text-primary"></i>
+                                <h3 class="font-bold text-xl">Maceió - AL</h3>
+                            </div>
+                            <p class="mb-2">Apartamento Mobiliado</p>
+                            <p class="text-muted">
+                                • Até 6 pessoas<br>       
+                                • Beira Mar<br>
+                                • ⁠3 quartos<br>
+                                • ⁠Ar condicionado<br> 
+                                • ⁠Piscina<br> 
+                                • ⁠Wi-Fi<br>
+                                • ⁠Cozinha Completa<br>
+                                • ⁠Garagem<br>
+ 
+                            </p>
+                            <p class="mt-2 mb-2">Obs: Não inclui roupa de cama nem alimentação.</p>
+                            <p class="text-muted">A partir de R$ 49,90</p> 
+                            <div class="card-footer">
+                                <a href="https://api.whatsapp.com/send?phone=6799202-7942&text=Ol%C3%A1,%20quero%20tirar%20algumas%20d%C3%BAvidas!" target="_blank" class="btn btn-secondary">Ver Disponibilidade</a>
+                            </div>
+                        </div>
+                    </div>
+
+            </div>
+            <div class="mt-12 text-center">
+                <a href="#" class="btn btn-primary">
+                    Ver Todos os Destinos
+                    <i class="fas fa-chevron-right ml-2"></i>
+                </a>
             </div>
         </section>
 
@@ -319,31 +544,14 @@
                         </ul>
 
                         <div class="mt-8">
-                            <a href="#" class="btn btn-lg" style="background: #e9e9e9; color: #111143;">
+                            <a href="https://api.whatsapp.com/send?phone=6799202-7942&text=Ol%C3%A1,%20quero%20tirar%20algumas%20d%C3%BAvidas!" target="_blank" class="btn btn-lg" style="background: #e9e9e9; color: #111143;">
                                 Saiba Mais
                             </a>
                         </div>
                     </div>
 
                     <div class="bg-white p-6 rounded-lg shadow-lg text-black">
-                        <h3 class="text-xl font-bold mb-4">Cadastre-se no Clube</h3>
-                        <form class="space-y-4">
-                            <div class="form-group">
-                                <input type="text" placeholder="Nome completo" required>
-                            </div>
-                            <div class="form-group">
-                                <input type="email" placeholder="E-mail" required>
-                            </div>
-                            <div class="form-group">
-                                <input type="tel" placeholder="Telefone" required>
-                            </div>
-                            <div class="form-group">
-                                <textarea placeholder="Quais destinos você tem interesse?"></textarea>
-                            </div>
-                            <button type="submit" class="btn btn-primary w-full">
-                                Associar-se
-                            </button>
-                        </form>
+                        
                     </div>
                 </div>
             </div>
@@ -407,25 +615,16 @@
         <div class="container">
             <div class="footer-grid">
                 <div>
-                    <div class="logo mb-4">
-                        <i class="fas fa-plane text-primary"></i>
-                        <span class="text-xl font-bold">Globo Viagens</span>
+                    <div class="logo">
+                        <span class="footer-heading">Globo Viagens</span>
                     </div>
                     <p class="text-muted">
-                        Sua agência de viagens completa para destinos nacionais e internacionais.
+                        Sua agência de viagens completa para destinos nacionais.
                     </p>
                     <div class="social-links">
-                        <a href="#" class="social-link">
-                            <i class="fab fa-instagram"></i>
+                        <a href="https://www.instagram.com/globo_viagens/" target="_blank" class="social-link">
+                            <i class="fab fa-instagram fa-2x"></i>
                             <span class="sr-only">Instagram</span>
-                        </a>
-                        <a href="#" class="social-link">
-                            <i class="fab fa-facebook"></i>
-                            <span class="sr-only">Facebook</span>
-                        </a>
-                        <a href="#" class="social-link">
-                            <i class="fab fa-twitter"></i>
-                            <span class="sr-only">Twitter</span>
                         </a>
                     </div>
                 </div>
@@ -433,11 +632,13 @@
                 <div>
                     <h3 class="footer-heading">Destinos Populares</h3>
                     <ul class="footer-links">
-                        <li><a href="#">Praias do Nordeste</a></li>
-                        <li><a href="#">Europa Clássica</a></li>
-                        <li><a href="#">Cruzeiro Caribe</a></li>
-                        <li><a href="#">Expedição Amazônica</a></li>
-                        <li><a href="#">Rota do Vinho</a></li>
+                        <li><a href="#">Litoral Nordestino</a></li>
+                        <li><a href="#">Litoral Carioca</a></li>
+                        <li><a href="#">Litoral Catarinense</a></li>
+                        <li><a href="#">Litoral Paranaense</a></li>
+                        <li><a href="#">Litoral Paulista</a></li>
+                        <li><a href="#">Resorts</a></li>
+                        <li><a href="#">Pontos Turísticos</a></li>
                     </ul>
                 </div>
 
@@ -461,18 +662,18 @@
                         </li>
                         <li class="contact-item">
                             <i class="fas fa-phone text-primary"></i>
-                            <span class="text-muted">(67) 93456-7890</span>
+                            <span class="text-muted">(67) 99202-7942</span>
                         </li>
                         <li class="contact-item">
                             <i class="fas fa-envelope text-primary"></i>
-                            <span class="text-muted">contato@GloboViagens.com.br</span>
+                            <span class="text-muted">globo.viagenscg@gmail.com</span>
                         </li>
                     </ul>
                 </div>
             </div>
 
             <div class="footer-bottom">
-                <p>&copy; <script>document.write(new Date().getFullYear())</script> Globo Viagens. Todos os direitos reservados.</p>
+                <p>&copy; <script>document.write(new Date().getFullYear())</script> Globo Viagens.</p>
             </div>
         </div>
     </footer>
@@ -554,7 +755,7 @@
             "ctaText":"Iniciar uma conversa...",
             "borderRadius":"25",
             "autoShow":false,
-            "phoneNumber":"67991912838"
+            "phoneNumber":"6799202-7942"
         }
         };
         s.onload = function() {
