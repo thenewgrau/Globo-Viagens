@@ -68,6 +68,11 @@ section#sobre-nos {
     margin-bottom: 20px;
 }
 
+.desktop-nav
+{
+    color: white;
+}
+
 .desktop-nav ul li a.active {
   align-items: center;
   gap: 2rem;
@@ -351,8 +356,8 @@ header {
     top: 0;
     z-index: 40;
     width: 100%;
-    border-bottom: 1px solid #e5e7eb;
-    background-color: rgba(255, 255, 255, 0.95);
+    border-bottom: 1px solid #111143;
+    background-color: #111143;
     backdrop-filter: blur(10px);
 }
 
@@ -387,8 +392,9 @@ nav a {
 }
 
 nav a:hover {
-    color: #111143;
+    color: grey;
 }
+
 
 .mobile-menu-btn {
     display: none;
@@ -397,6 +403,7 @@ nav a:hover {
     cursor: pointer;
     padding: 0.5rem;
     font-size: 1.5rem;
+    color: white;
 }
 
 .mobile-menu {
