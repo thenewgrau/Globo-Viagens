@@ -298,6 +298,21 @@ section#sobre-nos {
     color: white;
 }
 
+.text-brown
+{
+    color: #a94b00;
+}
+
+.text-prata
+{
+    color: silver;
+}
+
+.text-dourado
+{
+    color: gold;
+}
+
 .text-muted {
     color: #6b7280;
 }
@@ -742,6 +757,19 @@ footer {
     overflow-wrap: anywhere;
 }
 
+.border-color-bronze
+{
+    border: 1px solid #a94b00;
+}
+
+.border-color-prata
+{
+    border: 1px solid silver;
+}
+.border-color-ouro
+{
+    border: 1px solid gold;
+}
 
 /* Responsividade */
 @media (min-width: 768px) {
